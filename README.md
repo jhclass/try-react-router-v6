@@ -1,12 +1,14 @@
 Shall we take a look at the changed 'router' v6?
 
-[ ] BrowserRouter
-[ ] createBrowserRouter
-[ ] Route
->>[ ] errorElement
-[ ] UseNavigate
-[ ] useParams
-[ ] Outlet
-[ ] useOutletContext
-[ ] useSearchParams
+[x] BrowserRouter<br/>
+[x] createBrowserRouter<br/>
+[x] Route<br/>
+>>[x] errorElement<br/>
+[x] UseNavigate<br/>
+[x] useParams<br/>
+[x] Outlet<br/>
+[x] useOutletContext<br/>
+[x] useSearchParams<br/>
+
+
 
