@@ -1,5 +1,6 @@
 function Home(){
-    return(<div>Home</div>);
+    const users = [];
+    return(<div>{users[0].name}</div>);
 }
 
 export default Home;
