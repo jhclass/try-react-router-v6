@@ -1,8 +1,9 @@
-import {BrowserRouter,Routes,Route, createBrowserRouter, useParams} from "react-router-dom";
-import Header from "./components/Header";
+import {createBrowserRouter} from "react-router-dom";
 import Home from "./screen/Home";
 import About from "./screen/About";
 import User from "./screen/users/User"
+import Followers from "./screen/users/Followers";
+import Ab from "./screen/users/Ab"
 import App from "./App";
 import NotFound from "./screen/NotFound";
 import ErrorComponents from "./components/ErrorComponent";
@@ -31,6 +32,13 @@ const router = createBrowserRouter([
                 //     path:":userId",
                 //     element:<User/>
                 // }
+                ,
+                children:[
+                    {
+                    path:"ab",
+                    element:<Ab/>
+                    }
+                ]
             }
          
         ],
