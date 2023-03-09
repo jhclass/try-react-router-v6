@@ -12,7 +12,7 @@ console.log('params',params);
             <h1>User with id {users[params.userId-1].name}</h1>
             <hr/>
             
-        <Link to={`ab`}>See Followers</Link>
+        <Link to={`ab?type=123&geo=12345&name=json`}>See Followers</Link>
         <Outlet
             context={{nameOfMyUser : users[Number(params.userId)-1].name}}
         />
