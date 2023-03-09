@@ -5,6 +5,7 @@ import About from "./screen/About";
 import App from "./App";
 import NotFound from "./screen/NotFound";
 import ErrorComponents from "./components/ErrorComponent";
+/**useNavigator() */
 const router = createBrowserRouter([
     {
         path:"/",
