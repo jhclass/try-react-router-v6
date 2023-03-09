@@ -1,7 +1,6 @@
 import { useParams,Outlet, Link } from "react-router-dom";
 import { users } from "../../db";
-import Followers from "./Followers";
-import Ab from "./Ab"
+
 
 function User() {
 const params = useParams();
@@ -14,7 +13,9 @@ console.log('params',params);
             <hr/>
             
         <Link to={`ab`}>See Followers</Link>
-        <Outlet/>
+        <Outlet
+            context={{nameOfMyUser : users[Number(params.userId)-1].name}}
+        />
        
        
         </div>
