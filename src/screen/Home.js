@@ -7,7 +7,7 @@ function Home(){
             <h1>Users</h1>
             <ul>
                 {users.map((data,i)=>(
-                    <div>
+                    <div key={i}>
                         <Link to={`/users/${data.id}`}>{data.name}</Link>
                     </div>
                 ))}

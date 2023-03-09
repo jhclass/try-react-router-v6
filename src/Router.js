@@ -1,4 +1,4 @@
-import {BrowserRouter,Routes,Route, createBrowserRouter} from "react-router-dom";
+import {BrowserRouter,Routes,Route, createBrowserRouter, useParams} from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./screen/Home";
 import About from "./screen/About";
@@ -7,6 +7,7 @@ import App from "./App";
 import NotFound from "./screen/NotFound";
 import ErrorComponents from "./components/ErrorComponent";
 /**useNavigator() */
+
 const router = createBrowserRouter([
     {
         path:"/",
@@ -23,13 +24,13 @@ const router = createBrowserRouter([
                 errorElement:<ErrorComponents/>
             },
             {
-                // path:"user/:userId",
-                // element:<User/>
-                path:"user",
-                children:{
-                    path:":userId",
-                    element:<User/>
-                }
+                path:"users/:userId",
+                element:<User/>
+                // path:"user",
+                // children:{
+                //     path:":userId",
+                //     element:<User/>
+                // }
             }
          
         ],
